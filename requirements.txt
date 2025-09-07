@@ -1,0 +1,11 @@
+# Core RL + environments
+gymnasium>=0.29.1
+stable-baselines3[extra]>=2.3.0
+
+# Math & data handling
+numpy>=1.24
+pandas>=2.0
+
+# Visualization
+matplotlib>=3.7
+tensorboard>=2.13
