@@ -2,7 +2,7 @@
 
 A reinforcement learning approach to inventory management that outperforms traditional rule-based policies by optimizing the trade-off between service level and inventory costs.
 
-## 🎯 Project Overview
+## Project Overview
 
 This project implements and compares different inventory management strategies:
 - **Reinforcement Learning Agent** (PPO/DQN) - Our intelligent approach
@@ -15,7 +15,7 @@ The RL agent learns to make optimal ordering decisions by balancing:
 - Stockout costs for unmet demand
 - Fixed and variable ordering costs
 
-## 🏆 Key Results
+## Key Results
 
 Our PPO agent significantly outperforms traditional inventory policies:
 
@@ -26,10 +26,10 @@ Our PPO agent significantly outperforms traditional inventory policies:
 | sS(20,80) | 3,797.0 ± 235.2 | 100% | 44.4 ± 1.1 | 0.0 |
 
 **Key Insights:**
-- 🚀 **10% higher profits** than baseline policies
-- 📉 **78% lower inventory levels** (9 vs 42-44 units)
-- 🎯 **Smart risk management** - accepts minimal stockouts for massive cost savings
-- 💰 **Superior capital efficiency** - frees up working capital while increasing profits
+- **10% higher profits** than baseline policies
+- **78% lower inventory levels** (9 vs 42-44 units)
+- **Smart risk management** - accepts minimal stockouts for massive cost savings
+- **Superior capital efficiency** - frees up working capital while increasing profits
 
 ## 🛠️ Installation & Setup
 
@@ -51,7 +51,7 @@ source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-## 🚀 Usage
+## Usage
 
 ### 1. Training an RL Agent
 ```bash
@@ -85,7 +85,7 @@ python evaluate.py --model models/SmartStockRL_PPO_20250906_212858.zip --episode
 tensorboard --logdir logs/tb
 ```
 
-## 📊 Project Structure
+## Project Structure
 
 ```
 SmartStockRL/
@@ -103,7 +103,7 @@ SmartStockRL/
 └── runs/                # Evaluation results and metrics
 ```
 
-## 🔧 Core Components
+## Core Components
 
 ### Environment (`inv_env.py`)
 - **State Space**: [current_inventory, demand_forecast, day_of_week]
@@ -136,7 +136,7 @@ Easily adjustable parameters for:
 - **Scalability**: Easily adaptable to different products/markets
 - **Robustness**: Handles demand uncertainty and seasonality
 
-## 🔬 Experimental Setup
+## Experimental Setup
 
 ### Training Configuration
 - **Algorithm**: Proximal Policy Optimization (PPO)
@@ -156,7 +156,7 @@ PPO_CONFIG = {
 }
 ```
 
-## 🚧 Future Enhancements
+## Future Enhancements
 
 - [ ] Multi-product inventory management
 - [ ] Supply chain delays and lead times
@@ -166,26 +166,23 @@ PPO_CONFIG = {
 - [ ] Hierarchical inventory policies
 - [ ] Integration with ERP systems
 
-## 📚 References & Inspiration
+## References & Inspiration
 
 - Sutton, R. S., & Barto, A. G. (2018). *Reinforcement learning: An introduction*
 - Silver, E. A., Pyke, D. F., & Peterson, R. (1998). *Inventory management and production planning and scheduling*
 - Stable-Baselines3 Documentation: https://stable-baselines3.readthedocs.io/
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 📧 Contact
+## Contact
 
 **Krish Sharma** - krishs0404@gmail.com
 
-Project Link: [https://github.com/yourusername/SmartStockRL](https://github.com/yourusername/SmartStockRL)
-
----
 
 *Built with ❤️ using Python, Stable-Baselines3, and Gymnasium*
